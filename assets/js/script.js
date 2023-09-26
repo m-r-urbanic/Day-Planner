@@ -27,7 +27,21 @@ $(function () {
 var reformatDate = dayjs('2020-11-03 5:00:00 AM').format('dddd, MMMM D YYYY, h:mm:ss a');
 $('#currentDay').text(reformatDate);
 
-// test button clicking
+// test button
 $("#button1").click(function(){
   $("#box1").css("background-color", "green");
 })
+
+$(document).ready(function() {
+  // Get the button element by its id
+  const button = $('#button1');
+
+  // Add an event listener to the button for the click event
+  button.on('click', function() {
+    // Retrieve the value from the element with the specified id
+    const value = $('#box1').val();
+
+    // Store the value in local storage
+    localStorage.setItem('yourKey', value);
+  });
+});
