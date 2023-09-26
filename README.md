@@ -18,6 +18,10 @@ Grey boxes mean the hour has already passed, red means that is the current hour,
 
 # Credit
 
+This credit section includes all information outside of course materials referanced while completing this challenge.
+
+edX Xpret Learning Assistant referanced, in the js file and commented "Store and retrive local variables from local storage"
+
 Apply Bootstrap CSS class to all HTML elements of given type, stackoverflow, https://stackoverflow.com/questions/38335944/apply-bootstrap-css-class-to-all-html-elements-of-given-type
 
 jquery background color change on button click, stackoverflow, https://stackoverflow.com/questions/9821691/jquery-background-color-change-on-button-click

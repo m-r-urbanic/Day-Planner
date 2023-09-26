@@ -10,7 +10,6 @@ $('#currentDay').text(reformatDate);
 // get current time
 let date = dayjs();
 now = date.format("HH");
-console.log(now);
 
 // change color for each section based on the current time, start at 9am and go to 5pm
 // 9am
@@ -334,7 +333,8 @@ const buttonFour = $('#button4');
 const buttonFive = $('#button5');
 
 
-// Store and retrive local variables from local storage
+// Store and retrive local variables from local storage, Xpert Learning Assistant used for advice in this section
+
 $(document).ready(function() {
 
   // Add an event listener to the button for the click event
