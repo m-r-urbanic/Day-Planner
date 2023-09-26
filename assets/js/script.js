@@ -2,46 +2,172 @@
 // the code isn't run until the browser has finished rendering all the elements
 // in the html.
 
-$(function () {
-  // TODO: Add a listener for click events on the save button. This code should
-  // use the id in the containing time-block as a key to save the user input in
-  // local storage. HINT: What does `this` reference in the click listener
-  // function? How can DOM traversal be used to get the "hour-x" id of the
-  // time-block containing the button that was clicked? How might the id be
-  // useful when saving the description in local storage?
-  //
-  // TODO: Add code to apply the past, present, or future class to each time
-  // block by comparing the id to the current hour. HINTS: How can the id
-  // attribute of each time-block be used to conditionally add or remove the
-  // past, present, and future classes? How can Day.js be used to get the
-  // current hour in 24-hour time?
-  //
-  // TODO: Add code to get any user input that was saved in localStorage and set
-  // the values of the corresponding textarea elements. HINT: How can the id
-  // attribute of each time-block be used to do this?
-  //
-  // TODO: Add code to display the current date in the header of the page.
-});
-
 // refactor after testing
 var reformatDate = dayjs('2020-11-03 5:00:00 AM').format('dddd, MMMM D YYYY, h:mm:ss a');
 $('#currentDay').text(reformatDate);
 
 // test button
-$("#button1").click(function(){
-  $("#box1").css("background-color", "green");
+$("#button9").click(function(){
+  $("#box9").css("background-color", "green");
 })
 
+
+
+// Get the button element by its id
+const buttonNine = $('#button9');
+const buttonTen = $('#button10');
+const buttonEleven = $('#button11');
+const buttonTweleve = $('#button12');
+const buttonOne = $('#button1');
+const buttonTwo = $('#button2');
+const buttonThree = $('#button3');
+const buttonFour = $('#button4');
+const buttonFive = $('#button5');
+
 $(document).ready(function() {
-  // Get the button element by its id
-  const button = $('#button1');
 
   // Add an event listener to the button for the click event
-  button.on('click', function() {
+  buttonNine.on('click', function() {
     // Retrieve the value from the element with the specified id
-    const value = $('#box1').val();
+    const value = $('#box9').val();
 
     // Store the value in local storage
-    localStorage.setItem('yourKey', value);
+    localStorage.setItem('nineAM', value);
   });
+    // Add an event listener to the button for the click event
+  buttonTen.on('click', function() {
+    // Retrieve the value from the element with the specified id
+    const value = $('#box10').val();
+
+    // Store the value in local storage
+    localStorage.setItem('tenAM', value);
+  });
+    // Add an event listener to the button for the click event
+    buttonEleven.on('click', function() {
+      // Retrieve the value from the element with the specified id
+      const value = $('#box11').val();
+  
+      // Store the value in local storage
+      localStorage.setItem('elevenAM', value);
+    });
+    // Add an event listener to the button for the click event
+    buttonTweleve.on('click', function() {
+      // Retrieve the value from the element with the specified id
+      const value = $('#box12').val();
+  
+      // Store the value in local storage
+      localStorage.setItem('twelvePM', value);
+    });
+    // Add an event listener to the button for the click event
+    buttonOne.on('click', function() {
+      // Retrieve the value from the element with the specified id
+      const value = $('#box1').val();
+  
+      // Store the value in local storage
+      localStorage.setItem('onePM', value);
+    });
+    // Add an event listener to the button for the click event
+    buttonTwo.on('click', function() {
+      // Retrieve the value from the element with the specified id
+      const value = $('#box2').val();
+  
+      // Store the value in local storage
+      localStorage.setItem('twoPM', value);
+    });
+    // Add an event listener to the button for the click event
+    buttonThree.on('click', function() {
+      // Retrieve the value from the element with the specified id
+      const value = $('#box3').val();
+  
+      // Store the value in local storage
+      localStorage.setItem('threePM', value);
+    });
+    // Add an event listener to the button for the click event
+    buttonFour.on('click', function() {
+      // Retrieve the value from the element with the specified id
+      const value = $('#box4').val();
+  
+      // Store the value in local storage
+      localStorage.setItem('fourPM', value);
+    });
+    // Add an event listener to the button for the click event
+    buttonFive.on('click', function() {
+      // Retrieve the value from the element with the specified id
+      const value = $('#box5').val();
+  
+      // Store the value in local storage
+      localStorage.setItem('fivePM', value);
+    });
+  // Retrieve the stored value from localStorage
+  var storedNine = localStorage.getItem('nineAM');
+
+  // Check if the stored value exists
+  if (storedNine) {
+    // Populate the element with the stored value
+    $('#box9').val(storedNine);
+  }
+    // Retrieve the stored value from localStorage
+  var storedTen = localStorage.getItem('tenAM');
+
+    // Check if the stored value exists
+  if (storedTen) {
+      // Populate the element with the stored value
+    $('#box10').val(storedTen);
+  }
+    // Retrieve the stored value from localStorage
+    var storedEleven = localStorage.getItem('elevenAM');
+
+    // Check if the stored value exists
+  if (storedEleven) {
+      // Populate the element with the stored value
+    $('#box11').val(storedEleven);
+  }
+    // Retrieve the stored value from localStorage
+  var storedTwelve = localStorage.getItem('twelvePM');
+
+    // Check if the stored value exists
+  if (storedTwelve) {
+      // Populate the element with the stored value
+    $('#box12').val(storedTwelve);
+  }
+    // Retrieve the stored value from localStorage
+    var storedOne = localStorage.getItem('onePM');
+
+    // Check if the stored value exists
+  if (storedOne) {
+      // Populate the element with the stored value
+    $('#box1').val(storedOne);
+  }
+    // Retrieve the stored value from localStorage
+    var storedTwo = localStorage.getItem('twoPM');
+
+    // Check if the stored value exists
+  if (storedTwo) {
+      // Populate the element with the stored value
+    $('#box2').val(storedTwo);
+  }
+      // Retrieve the stored value from localStorage
+      var storedThree = localStorage.getItem('threePM');
+
+      // Check if the stored value exists
+    if (storedThree) {
+        // Populate the element with the stored value
+      $('#box3').val(storedThree);
+    }
+        // Retrieve the stored value from localStorage
+  var storedFour = localStorage.getItem('fourPM');
+
+  // Check if the stored value exists
+if (storedFour) {
+    // Populate the element with the stored value
+  $('#box4').val(storedFour);
+      // Retrieve the stored value from localStorage
+      var storedFive = localStorage.getItem('fivePM');
+
+      // Check if the stored value exists
+    if (storedFive) {
+        // Populate the element with the stored value
+      $('#box12').val(storedFive);
+    }
+}
 });
