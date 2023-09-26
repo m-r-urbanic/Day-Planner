@@ -1,17 +1,37 @@
-// Wrap all code that interacts with the DOM in a call to jQuery to ensure that
-// the code isn't run until the browser has finished rendering all the elements
-// in the html.
+const future = "#77dd77";
+const present = "#ff6961";
+const past = "#d3d3d3";
 
 // refactor after testing
 var reformatDate = dayjs('2020-11-03 5:00:00 AM').format('dddd, MMMM D YYYY, h:mm:ss a');
 $('#currentDay').text(reformatDate);
 
+// get current time
+let now = dayjs();
+now = now.format("HH");
+console.log(now);
+
+// change color for each section based on the current time, start at 9am and go to 5pm
+// 9am
+if (now = 9)
+{
+  // Array of ids greater than 9
+const ids = ['hour-10', 'hour-11','hour-12','hour-1','hour-2', 'hour-3','hour-4','hour-5'];
+
+// Loop through the IDs
+ids.forEach((id) => {
+  // Get the element by ID
+  const element = document.getElementById(id);
+  
+  // Change the color
+  element.style.backgroundColor = future;
+});
+}
+
 // test button
 $("#button9").click(function(){
   $("#box9").css("background-color", "green");
 })
-
-
 
 // Get the button element by its id
 const buttonNine = $('#button9');
@@ -169,5 +189,6 @@ if (storedFour) {
         // Populate the element with the stored value
       $('#box12').val(storedFive);
     }
-}
+  }
 });
+

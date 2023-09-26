@@ -6,3 +6,5 @@ jquery background color change on button click, stackoverflow, https://stackover
 
 How do I make my javascript function change the color of my text?
 , stackoverflow, https://stackoverflow.com/questions/63812620/how-do-i-make-my-javascript-function-change-the-color-of-my-text
+
+day.js tutorial, ZetCone, https://zetcode.com/javascript/dayjs/
