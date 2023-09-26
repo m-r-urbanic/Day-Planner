@@ -1,25 +1,319 @@
+// set up constants to be used for recoloring boxes
 const future = "#77dd77";
 const present = "#ff6961";
 const past = "#d3d3d3";
 
-// refactor after testing
-var reformatDate = dayjs('2020-11-03 5:00:00 AM').format('dddd, MMMM D YYYY, h:mm:ss a');
+// display current date and time
+var reformatDate = dayjs().format('dddd, MMMM D YYYY, h:mm:ss a');
 $('#currentDay').text(reformatDate);
 
 // get current time
-let now = dayjs();
-now = now.format("HH");
+let date = dayjs();
+now = date.format("HH");
 console.log(now);
 
 // change color for each section based on the current time, start at 9am and go to 5pm
 // 9am
-if (now = 9)
+if (now == 9)
 {
-  // Array of ids greater than 9
-const ids = ['hour-10', 'hour-11','hour-12','hour-1','hour-2', 'hour-3','hour-4','hour-5'];
+// Array of ids greater than 9
+const futureIds = ['hour-10', 'hour-11','hour-12','hour-1','hour-2', 'hour-3','hour-4','hour-5'];
+
+//current hour
+const currentId = document.getElementById('hour-9')
+
+// Change the color
+currentId.style.backgroundColor = present;
 
 // Loop through the IDs
-ids.forEach((id) => {
+futureIds.forEach((id) => {
+  // Get the element by ID
+  const element = document.getElementById(id);
+  
+  // Change the color
+  element.style.backgroundColor = future;
+});
+}
+
+// 10am
+if (now == 10)
+{
+// Array of ids greater than 10
+const futureIds = ['hour-11','hour-12','hour-1','hour-2', 'hour-3','hour-4','hour-5'];
+// Array of ids less than 10
+const pastIds = ['hour-9']
+
+//current hour
+const currentId = document.getElementById('hour-10')
+
+// Change the color
+currentId.style.backgroundColor = present;
+
+// Loop through the IDs
+futureIds.forEach((id) => {
+  // Get the element by ID
+  const element = document.getElementById(id);
+  
+  // Change the color
+  element.style.backgroundColor = future;
+});
+
+// Loop through the IDs
+pastIds.forEach((id) => {
+  // Get the element by ID
+  const element = document.getElementById(id);
+  
+  // Change the color
+  element.style.backgroundColor = past;
+});
+}
+
+// 11am
+if (now == 11)
+{
+// Array of ids greater than 10
+const futureIds = ['hour-12','hour-1','hour-2', 'hour-3','hour-4','hour-5'];
+// Array of ids less than 10
+const pastIds = ['hour-9', 'hour-10']
+
+//current hour
+const currentId = document.getElementById('hour-11')
+
+// Change the color
+currentId.style.backgroundColor = present;
+
+// Loop through the IDs
+futureIds.forEach((id) => {
+  // Get the element by ID
+  const element = document.getElementById(id);
+  
+  // Change the color
+  element.style.backgroundColor = future;
+});
+
+// Loop through the IDs
+pastIds.forEach((id) => {
+  // Get the element by ID
+  const element = document.getElementById(id);
+  
+  // Change the color
+  element.style.backgroundColor = past;
+});
+}
+
+// 12pm
+if (now == 12)
+{
+// Array of ids greater than 10
+const futureIds = ['hour-1','hour-2', 'hour-3','hour-4','hour-5'];
+// Array of ids less than 10
+const pastIds = ['hour-9','hour-10','hour-11']
+
+//current hour
+const currentId = document.getElementById('hour-12')
+
+// Change the color
+currentId.style.backgroundColor = present;
+
+// Loop through the IDs
+futureIds.forEach((id) => {
+  // Get the element by ID
+  const element = document.getElementById(id);
+  
+  // Change the color
+  element.style.backgroundColor = future;
+});
+
+// Loop through the IDs
+pastIds.forEach((id) => {
+  // Get the element by ID
+  const element = document.getElementById(id);
+  
+  // Change the color
+  element.style.backgroundColor = past;
+});
+}
+
+// 1pm
+if (now == 13)
+{
+// Array of ids greater than 10
+const futureIds = ['hour-2', 'hour-3','hour-4','hour-5'];
+// Array of ids less than 10
+const pastIds = ['hour-9','hour-10','hour-11','hour-12']
+
+//current hour
+const currentId = document.getElementById('hour-1')
+
+// Change the color
+currentId.style.backgroundColor = present;
+
+// Loop through the IDs
+futureIds.forEach((id) => {
+  // Get the element by ID
+  const element = document.getElementById(id);
+  
+  // Change the color
+  element.style.backgroundColor = future;
+});
+
+// Loop through the IDs
+pastIds.forEach((id) => {
+  // Get the element by ID
+  const element = document.getElementById(id);
+  
+  // Change the color
+  element.style.backgroundColor = past;
+});
+}
+
+// 2pm
+if (now == 14)
+{
+// Array of ids greater than 10
+const futureIds = ['hour-3','hour-4','hour-5'];
+// Array of ids less than 10
+const pastIds = ['hour-9','hour-10','hour-11','hour-12','hour-1']
+
+//current hour
+const currentId = document.getElementById('hour-2')
+
+// Change the color
+currentId.style.backgroundColor = present;
+
+// Loop through the IDs
+futureIds.forEach((id) => {
+  // Get the element by ID
+  const element = document.getElementById(id);
+  
+  // Change the color
+  element.style.backgroundColor = future;
+});
+
+// Loop through the IDs
+pastIds.forEach((id) => {
+  // Get the element by ID
+  const element = document.getElementById(id);
+  
+  // Change the color
+  element.style.backgroundColor = past;
+});
+}
+
+// 3pm
+if (now == 15)
+{
+// Array of ids greater than 10
+const futureIds = ['hour-4','hour-5'];
+// Array of ids less than 10
+const pastIds = ['hour-9','hour-10','hour-11','hour-12','hour-1','hour-2']
+
+//current hour
+const currentId = document.getElementById('hour-3')
+
+// Change the color
+currentId.style.backgroundColor = present;
+
+// Loop through the IDs
+futureIds.forEach((id) => {
+  // Get the element by ID
+  const element = document.getElementById(id);
+  
+  // Change the color
+  element.style.backgroundColor = future;
+});
+
+// Loop through the IDs
+pastIds.forEach((id) => {
+  // Get the element by ID
+  const element = document.getElementById(id);
+  
+  // Change the color
+  element.style.backgroundColor = past;
+});
+}
+
+// 4pm
+if (now == 16)
+{
+// Array of ids greater than 10
+const futureIds = ['hour-5'];
+// Array of ids less than 10
+const pastIds = ['hour-9','hour-10','hour-11','hour-12','hour-1','hour-2','hour-3']
+
+//current hour
+const currentId = document.getElementById('hour-4')
+
+// Change the color
+currentId.style.backgroundColor = present;
+
+// Loop through the IDs
+futureIds.forEach((id) => {
+  // Get the element by ID
+  const element = document.getElementById(id);
+  
+  // Change the color
+  element.style.backgroundColor = future;
+});
+
+// Loop through the IDs
+pastIds.forEach((id) => {
+  // Get the element by ID
+  const element = document.getElementById(id);
+  
+  // Change the color
+  element.style.backgroundColor = past;
+});
+}
+
+// 5pm
+if (now == 17)
+{
+// Array of ids greater than 10
+const futureIds = ['hour-9','hour-10','hour-11','hour-12','hour-1','hour-2', 'hour-3','hour-4'];
+// Array of ids less than 10
+const pastIds = []
+
+//current hour
+const currentId = document.getElementById('hour-5')
+
+// Change the color
+currentId.style.backgroundColor = present;
+
+// Loop through the IDs
+pastIds.forEach((id) => {
+  // Get the element by ID
+  const element = document.getElementById(id);
+  
+  // Change the color
+  element.style.backgroundColor = past;
+});
+}
+
+// after 6pm
+if (now > 17)
+{
+// Array of ids greater than 10
+const pastIds = ['hour-9','hour-10','hour-11','hour-12','hour-1','hour-2', 'hour-3','hour-4','hour-5'];
+
+// Loop through the IDs
+pastIds.forEach((id) => {
+  // Get the element by ID
+  const element = document.getElementById(id);
+  
+  // Change the color
+  element.style.backgroundColor = past;
+});
+}
+
+// before 9am
+if (now < 9)
+{
+// Array of ids greater than 10
+const futureIds = ['hour-9','hour-10','hour-11','hour-12','hour-1','hour-2', 'hour-3','hour-4','hour-5'];
+
+// Loop through the IDs
+futureIds.forEach((id) => {
   // Get the element by ID
   const element = document.getElementById(id);
   
