@@ -10,7 +10,6 @@ $('#currentDay').text(reformatDate);
 // get current time
 let date = dayjs();
 now = date.format("HH");
-console.log(now);
 
 // change color for each section based on the current time, start at 9am and go to 5pm
 // 9am
@@ -333,6 +332,9 @@ const buttonThree = $('#button3');
 const buttonFour = $('#button4');
 const buttonFive = $('#button5');
 
+
+// Store and retrive local variables from local storage, Xpert Learning Assistant used for advice in this section
+
 $(document).ready(function() {
 
   // Add an event listener to the button for the click event
@@ -407,77 +409,77 @@ $(document).ready(function() {
       // Store the value in local storage
       localStorage.setItem('fivePM', value);
     });
-  // Retrieve the stored value from localStorage
-  var storedNine = localStorage.getItem('nineAM');
-
-  // Check if the stored value exists
-  if (storedNine) {
-    // Populate the element with the stored value
-    $('#box9').val(storedNine);
-  }
     // Retrieve the stored value from localStorage
-  var storedTen = localStorage.getItem('tenAM');
+    var storedNine = localStorage.getItem('nineAM');
 
     // Check if the stored value exists
-  if (storedTen) {
+    if (storedNine) {
       // Populate the element with the stored value
-    $('#box10').val(storedTen);
-  }
-    // Retrieve the stored value from localStorage
-    var storedEleven = localStorage.getItem('elevenAM');
-
-    // Check if the stored value exists
-  if (storedEleven) {
-      // Populate the element with the stored value
-    $('#box11').val(storedEleven);
-  }
-    // Retrieve the stored value from localStorage
-  var storedTwelve = localStorage.getItem('twelvePM');
-
-    // Check if the stored value exists
-  if (storedTwelve) {
-      // Populate the element with the stored value
-    $('#box12').val(storedTwelve);
-  }
-    // Retrieve the stored value from localStorage
-    var storedOne = localStorage.getItem('onePM');
-
-    // Check if the stored value exists
-  if (storedOne) {
-      // Populate the element with the stored value
-    $('#box1').val(storedOne);
-  }
-    // Retrieve the stored value from localStorage
-    var storedTwo = localStorage.getItem('twoPM');
-
-    // Check if the stored value exists
-  if (storedTwo) {
-      // Populate the element with the stored value
-    $('#box2').val(storedTwo);
-  }
+      $('#box9').val(storedNine);
+    }
       // Retrieve the stored value from localStorage
-      var storedThree = localStorage.getItem('threePM');
+    var storedTen = localStorage.getItem('tenAM');
 
       // Check if the stored value exists
-    if (storedThree) {
+    if (storedTen) {
         // Populate the element with the stored value
-      $('#box3').val(storedThree);
+      $('#box10').val(storedTen);
+    }
+      // Retrieve the stored value from localStorage
+      var storedEleven = localStorage.getItem('elevenAM');
+
+      // Check if the stored value exists
+    if (storedEleven) {
+        // Populate the element with the stored value
+      $('#box11').val(storedEleven);
+    }
+      // Retrieve the stored value from localStorage
+    var storedTwelve = localStorage.getItem('twelvePM');
+
+      // Check if the stored value exists
+    if (storedTwelve) {
+        // Populate the element with the stored value
+      $('#box12').val(storedTwelve);
+    }
+      // Retrieve the stored value from localStorage
+      var storedOne = localStorage.getItem('onePM');
+
+      // Check if the stored value exists
+    if (storedOne) {
+        // Populate the element with the stored value
+      $('#box1').val(storedOne);
+    }
+      // Retrieve the stored value from localStorage
+      var storedTwo = localStorage.getItem('twoPM');
+
+      // Check if the stored value exists
+    if (storedTwo) {
+        // Populate the element with the stored value
+      $('#box2').val(storedTwo);
     }
         // Retrieve the stored value from localStorage
-  var storedFour = localStorage.getItem('fourPM');
+        var storedThree = localStorage.getItem('threePM');
 
-  // Check if the stored value exists
-if (storedFour) {
-    // Populate the element with the stored value
-  $('#box4').val(storedFour);
-      // Retrieve the stored value from localStorage
-      var storedFive = localStorage.getItem('fivePM');
+        // Check if the stored value exists
+      if (storedThree) {
+          // Populate the element with the stored value
+        $('#box3').val(storedThree);
+      }
+          // Retrieve the stored value from localStorage
+    var storedFour = localStorage.getItem('fourPM');
 
       // Check if the stored value exists
-    if (storedFive) {
+    if (storedFour) {
         // Populate the element with the stored value
-      $('#box12').val(storedFive);
+      $('#box4').val(storedFour);
+          // Retrieve the stored value from localStorage
+          var storedFive = localStorage.getItem('fivePM');
+
+          // Check if the stored value exists
+    if (storedFive) {
+            // Populate the element with the stored value
+        $('#box5').val(storedFive);
     }
-  }
+    }
 });
 
