@@ -10,7 +10,11 @@ This project can be downloaded (as a whole) and ran in Visual Studio Code with n
 
 # Usage
 
-Grey boxes mean the hour has already passed, red means that is the current hour, green means that is a future hour. Type into any of the text boxes and click the save button next to it. That will save the text (for that box only) in the local storage
+https://m-r-urbanic.github.io/Day-Planner/
+
+Grey boxes mean the hour has already passed, red means that is the current hour, green means that is a future hour. Type into any of the text boxes and click the save button next to it. That will save the text (for that box only) in the local storage.
+
+![image of refactored webpage](./assets/screenShot.png)
 
 # Credit
 
