@@ -322,11 +322,6 @@ futureIds.forEach((id) => {
 });
 }
 
-// test button
-$("#button9").click(function(){
-  $("#box9").css("background-color", "green");
-})
-
 // Get the button element by its id
 const buttonNine = $('#button9');
 const buttonTen = $('#button10');
